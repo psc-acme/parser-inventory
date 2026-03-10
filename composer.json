@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/parser-inventory",
+    "description": "Package parser-inventory for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ParserInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/lock": "^7.0",
+        "symfony/string": "^7.0",
+        "illuminate/support": "^11.0",
+        "doctrine/dbal": "^4.0",
+        "psc-acme/parser-product": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0",
+        "symfony/phpunit-bridge": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
